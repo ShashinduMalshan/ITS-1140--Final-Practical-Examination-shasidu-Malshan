@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Import all the JavaFX components we need -->
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<!-- Main window container - this is the root of our chat window -->
+<AnchorPane prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #f5f5f5;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse71.groupchat.ClientController">
+    <children>
+        <!-- Title at the top of the window -->
+        <Label layoutX="33.0" layoutY="30.0" text="Client Display" textFill="#2c3e50">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+
+        <!-- Main white panel that contains all our chat elements -->
+        <AnchorPane layoutX="31.2" layoutY="78.0" prefHeight="400.0" prefWidth="640.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-border-color: #e0e0e0; -fx-border-radius: 10; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 10, 0, 0, 10);" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="77.0">
+            <children>
+                <!-- Vertical box to arrange elements from top to bottom -->
+                <VBox layoutX="83.2" layoutY="83.2" prefHeight="337.0" prefWidth="535.0" spacing="15.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="62.0" AnchorPane.rightAnchor="43.0" AnchorPane.topAnchor="41.0">
+                    <children>
+                        <!-- Scrollable area for chat messages -->
+                        <ScrollPane fitToWidth="true" prefHeight="300.0" prefWidth="600.0" style="-fx-background-color: #f8f9fa; -fx-border-color: #e0e0e0; -fx-border-radius: 5;" VBox.vgrow="ALWAYS">
+                            <content>
+                                <!-- Container for all chat messages - each message will be added here -->
+                                <VBox fx:id="chatPane" prefHeight="473.0" prefWidth="493.0" spacing="5.0" />
+                            </content>
+                        </ScrollPane>
+
+                        <!-- Bottom section with message input and send button -->
+                        <HBox alignment="CENTER_LEFT" spacing="10.0">
+                            <children>
+                                <!-- Text field where user types their message -->
+                                <TextField fx:id="txtFieldClientMessage" prefHeight="30.0" prefWidth="358.0" promptText="Type your message here..." HBox.hgrow="ALWAYS">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </TextField>
+                                <!-- Button to send the message -->
+                                <Button fx:id="btnSendClient" mnemonicParsing="false" onAction="#btnSendOnAction" prefHeight="40.0" prefWidth="80.0" style="-fx-background-color: #2c3e50; -fx-background-radius: 5;" text="Send" textFill="WHITE">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Button>
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+                <!-- Label to show the client's name -->
+                <Label fx:id="lblClientName" layoutX="140.0" layoutY="6.0" prefHeight="30.0" prefWidth="328.0" />
+            </children>
+            <!-- Add some space around the edges -->
+            <padding>
+                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+            </padding>
+        </AnchorPane>
+    </children>
+</AnchorPane>

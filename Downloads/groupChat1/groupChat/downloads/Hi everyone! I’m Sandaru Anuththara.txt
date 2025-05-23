@@ -1,0 +1,25 @@
+Hi everyone! I’m Sandaru Anuththara Perera, a software engineering student at the Institute of Software Engineering. Today, I’m excited to share my portfolio website, built for my Internet Technology module. Let’s take a quick look at its main parts and how I coded it, all in a few minutes.
+
+**Home Section**  
+The Home page welcomes you with my name and a cool typing animation that says “Software Engineer.” It has social media links to connect with me. I used HTML with a `div` for the text and `img` tags for icons. CSS Grid makes it look great on any device, and AOS animations add a smooth fade-down effect. JavaScript powers the typing animation to make it lively.
+
+**About Section**  
+The About section shares my passion for coding and problem-solving. It has my photo and a short bio. The HTML uses a `section` with `img` and `p` tags. I used CSS Grid to keep it neat, and AOS adds flip-left and fade-up animations to make it fun and engaging.
+
+**Education Section**  
+In the Education section, I list my studies, like my Computer Science degree at the Institute of Software Engineering, my Advanced Level at Taxila Central College, and completing all three levels at the Association of Accounting Technicians. The HTML uses `article` tags for each step, styled with CSS to look like a timeline. AOS fade-right animations make it stand out.
+
+**Assignments Section**  
+The Assignments section shows my school projects, like CSS tasks, JavaScript work, and a Bootstrap POS system. I used HTML `div` tags with GitHub links for each project. CSS Grid arranges them nicely, and AOS zoom-in-left animations add a cool effect. JavaScript and jQuery add features, like the single-page app in Assignment 7.
+
+**Projects Section**  
+The Projects section highlights my work, like a Student Management System, a Restaurant Management System, and a Tic Tac Toe game with AI Minimax. HTML `div` tags hold images and GitHub links. CSS Grid creates card designs with hover effects, and AOS flip animations make it exciting to explore.
+
+**Skills Section**  
+The Skills section shows what I’m good at, like Java, JavaScript, HTML, CSS, MySQL, and tools like IntelliJ, VS Code, and Figma. HTML uses `div` tags with skill images, styled with CSS Grid for a clean look. AOS zoom-out-left animations make it pop.
+
+**Contact Section**  
+The Contact section has a form and my details, like email and phone number. HTML includes `input` tags and a WhatsApp button for easy messaging. CSS Grid keeps it organized, and AOS fade animations add style. JavaScript sends form messages to my WhatsApp for quick replies.
+
+**Conclusion**  
+I built this portfolio using HTML, CSS Grid, JavaScript, jQuery, and AOS animations. It shows my web development skills and love for creating useful tech. Thank you for listening! Feel free to explore my site and reach out at sandaruprera108@gmail.com or through my contact form. I’d love to connect!
